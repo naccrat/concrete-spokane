@@ -1,0 +1,255 @@
+---
+layout: default
+title: Welcome to All-Pro Concrete Spokane
+services: Basic Slabs, Stamped Concrete, Concrete Patios, and more
+meta_description: Welcome to All-Pro Concrete Spokane, your trusted local expert for all your concrete needs in Spokane, WA. From basic slabs to stamped concrete, pavers, patios, driveways, and retaining walls, we deliver exceptional craftsmanship and personalized solutions. Enhance your outdoor spaces with our durable and visually appealing concrete solutions. Proudly serving the Lilac City, our experienced team creates long-lasting structures that withstand the test of time.
+
+main-image: concrete-driveway-1.jpg
+---
+
+  <div class="py-vh-3 w-100 overflow-hidden">
+    <div class="container">
+      <div class="row d-flex ">
+        <div class="col-lg-7">
+          <h2 class="display-6">Your trusted local expert in all things concrete</h2>
+          <h3 class="text-secondary">Your One Stop Shop For All Things Concrete in Spokane, WA</h3>
+          <p>
+            Whether you need basic slabs, stamped concrete, concrete pavers, or beautiful concrete patios, we've got you covered. We also offer professional concrete stain and repair services. We ensure your surfaces look their best and stand the test of time. As proud residents of Lilac City, we're dedicated to enhancing the beauty of our community.
+            </p>
+          <p>
+            From basic slabs to intricate stamped concrete designs, we offer a wide range of concrete solutions. We have the skills and resources to handle projects of any size or complexity.
+          </p>
+          <p>
+            We believe that getting your concrete project done should be a hassle-free experience. From the initial consultation to the final cleanup, we handle every aspect with professionalism and care. Our team is always ready to address your questions and concerns. We will provide clear communication throughout the entire process.
+          </p>
+
+          {% for cat in site.category-list %}  
+            <ul>
+              {% for page in site.pages %}
+                {% if page.resource == true %}
+                  {% for pc in page.categories %}
+                    {% if pc == cat %}
+                      <li class="p-1">
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                      </li>
+                    {% endif %}   <!-- cat-match-p -->
+                  {% endfor %}  <!-- page-category -->
+                {% endif %}   <!-- resource-p -->
+              {% endfor %}  <!-- page -->
+            </ul>
+            {% endfor %}  <!-- cat -->
+
+        </div>
+        <!-- col-lg-5 FORM-->
+        {% include form.html %}
+
+      </div>
+    </div>
+  </div>
+
+  <div class="position-relative overflow-hidden w-100 bg-light">
+    <div class="container-fluid">
+      <div class="row overflow-scroll">
+        <div class="col-12">
+          <div class="row vw-100 px-0 py-vh-3 d-flex align-items-center scrollx">
+            <div class="col-md-3 aos-init aos-animate" data-aos="fade-up">
+                <img src="img/concrete-patio-2.jpeg" class="rounded shadow img-fluid" alt="A concrete patio with a kitchen and BBQ." width="512" height="341">
+            </div>
+    
+            <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <img src="img/concrete-patio-pool.jpeg" class="img-fluid rounded shadow" alt="A concrete patio surrounding a pool with a paviltion." width="1164" height="776">
+            </div>
+    
+            <div class="col-md-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="800">
+                <img src="img/concrete-patio.jpeg" class="rounded shadow img-fluid" alt="A concrete patio with a pavilion on it." width="512" height="341">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section One -->
+  <div class="py-vh-3 w-100 overflow-hidden">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-lg-6">
+          <h2 class="py-3">Basic slab</h2>
+          <p>We specialize in creating solid and level basic slabs. We work on both residential and commercial projects. Our skilled team ensures precise construction, providing a reliable foundation for your structure. Whether you need a basic slab for a new build or need to replace an existing one, we have the expertise to deliver. Trust us to handle your basic slab needs with professionalism and reliability.</p>
+          <ul>
+            <li>Expertly crafted basic slabs for sturdy foundations</li>
+            <li>Reliable and precise construction for residential and commercial projects</li>
+            <li>Experienced team dedicated to delivering exceptional results</li>
+            <li>Trustworthy partner for all your basic slab requirements</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row gx-5 d-flex">
+            <div class="col-md-11">
+              <img src="img/concrete-basic-slab-2.jpeg" class="shadow" width="100%" alt="A man working in concrete that is being laid down by a truck."/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="py-vh-3 bg-gray-100 w-100 overflow-hidden">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-lg-6">
+          <div class="row gx-5 d-flex">
+            <div class="col-md-11">
+              <img src="img/stamped-concrete.jpeg" class="shadow" width="100%" alt="A close up shot or stamped concrete."/>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="py-3">Stamped concrete</h2>
+          <p>Transform your outdoor spaces with our stunning stamped concrete services. We have a variety of stamped concrete designs. They replicate the natural beauty of materials like stone, brick, and wood. With our expertise, you can enjoy the look of luxurious materials at an affordable cost. Let us bring elegance to your outdoor space with our stamped concrete solutions.</p>
+          <ul>
+            <li>Customizable stamped concrete designs for unique outdoor aesthetics            </li>
+            <li>Beautifully mimics the look of expensive materials at a fraction of the cost</li>
+            <li>Skilled artisans create intricate patterns and textures for stunning results</li>
+            <li>Enhance the visual appeal of your patios, driveways, and walkways with stamped concrete</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="py-vh-3 w-100 overflow-hidden">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-lg-6">
+          <h2 class="py-3">
+            Concrete patios
+          </h2>
+          <p>
+            All-Pro Concrete Spokane specializes in designing and constructing functional concrete patios. These add beauty to your outdoor spaces. Whether you desire a cozy gathering area or a spacious entertainment space, we have the expertise to bring your patio dreams to life. Our team works with you, offering a range of design options to match your style and budget.
+          </p>
+          <ul>
+            <li>Custom-designed concrete patios tailored to your unique preferences            </li>
+            <li>Create a welcoming outdoor space for relaxation and entertainment            </li>
+            <li>Wide range of design options to suit your style and budget            </li>
+            <li>Expert installation for durable and visually appealing concrete patios            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row gx-5 d-flex">
+            <div class="col-md-11">
+              <img src="img/concrete-large-patio.jpeg" class="shadow" width="100%" alt="A large concrete patio with trees and bushes in the background."/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="py-vh-3 bg-gray-100 w-100 overflow-hidden">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-lg-6">
+          <div class="row gx-5 d-flex">
+            <div class="col-md-11">
+              <img src="img/concrete-pavers.jpeg" class="shadow" width="100%" alt="A large walkway of concrete pavers leading to a set of stairs."/>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="py-3">Concrete pavers</h2>
+          <p>
+            Elevate the charm and functionality of your outdoor areas with our crafted concrete pavers. We offer a wide selection of concrete paver designs. This will help transform your driveways, walkways, and pathways into stunning features. With a variety of colors, shapes, and patterns available, you can achieve a custom look that matches your style.
+          </p>
+          <ul>
+            <li>Enhance your outdoor spaces with professionally installed concrete pavers</li>
+            <li>Wide selection of designs for driveways, walkways, and pathways</li>
+            <li>Meticulous installation for durable and visually appealing surfaces</li>
+            <li>Create a custom look that complements your landscape with concrete pavers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="py-vh-3 w-100 overflow-hidden">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-lg-6">
+          <h2 class="py-3">
+            Retaining walls
+          </h2>
+          <p>
+            Retaining walls are our specialty. They will enhance the stability and visual appeal of your outdoor spaces. Our team understands the importance of preventing soil erosion and creating usable terraces. We offer a range of design options to suit your landscape and functional needs. We'll ensure that your retaining wall is built to last.
+          </p>
+          <ul>
+            <li>Expertly constructed retaining walls for soil erosion prevention and terracing</li>
+            <li>Customizable design options to suit your landscape and functional requirements</li>
+            <li>Meticulous planning and precise construction for long-lasting results</li>
+            <li>Enhance the stability and visual appeal of your outdoor spaces with our retaining walls</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row gx-5 d-flex">
+            <div class="col-md-11">
+              <img src="img/concrete-retaining-wall.jpeg" class="shadow" width="100%" alt="A long concrete retaining wall with grass and trees behind it."/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="py-vh-3 bg-gray-100 w-100 overflow-hidden">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-lg-6">
+          <div class="row gx-5 d-flex">
+            <div class="col-md-11">
+              <img src="img/concrete-driveway-1.jpg" class="shadow" width="100%" alt="A concrete driveway leading up to a house and garage."/>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="py-3">
+            Concrete Driveways
+          </h2>
+          <p>We are the go-to expert for concrete driveways. We deliver exceptional results that combine functionality and aesthetics. Our skilled team understands that your driveway plays a crucial role in your property's appeal. We ensure that you will be satisfied with your concrete driveway. Trust us to enhance your home's curb appeal while providing a long-lasting solution.</p>
+          <ul>
+            <li>Expertly designed and constructed concrete driveways for durability and functionality</li>
+            <li>Withstand heavy vehicles and varying weather conditions</li>
+            <li>Meticulous attention to detail and superior craftsmanship</li>
+            <li>Enhance your home's curb appeal with a visually pleasing concrete driveway</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog section -->
+  <!-- <div class="small bg-gray-100 py-vh-3 w-100 overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12 py-5 text-center">
+          <h3 class="fs-2 fw-light">Read our latest articles</h3>
+        </div>
+        {% for post in site.posts limit:3 %}           
+        <div class="col-md-6 col-lg-4 border-end aos-init aos-animate" data-aos="fade-up">
+          <div class="d-flex">
+            <div class="col-md-9 flex-fill">
+              <h3 class="h5 my-2"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+              <p>{{ post.excerpt }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div> -->
+
+  {% include cta.html %}
