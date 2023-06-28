@@ -3,27 +3,27 @@
   <form 
     class="row" 
     name="contact"
-    action="{{ site.url }}/thank-you/" 
+    action="{{ site.url }}/thank-you.html" 
     method="post" 
     data-netlify-recaptcha="true" 
     data-netlify="true">
     
     <div class="col-12">
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Full Name *</label>
-        <input type="text" name="name" class="form-control form-control-lg p-3" id="exampleInputPassword1">
+        <label for="fullName" class="form-label">Full Name *</label>
+        <input type="text" name="name" class="form-control form-control-lg p-3" id="fullName">
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Phone Number *</label>
-        <input type="text" name="phone" class="form-control form-control-lg p-3" id="exampleInputPassword1">
+        <label for="phoneNumber" class="form-label">Phone Number *</label>
+        <input type="text" name="phone" class="form-control form-control-lg p-3" id="phoneNumber">
       </div>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email Address *</label>
-        <input type="email" name="email" class="form-control form-control-lg p-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <label for="emailAddress" class="form-label">Email Address *</label>
+        <input type="email" name="email" class="form-control form-control-lg p-3" id="emailAddress" aria-describedby="emailHelp">
       </div>
       <div class="mb-3">
-        <label for="exampleInputMessage" class="form-label">Tell us about your concrete project *</label>
-        <textarea type="text" name="message" class="form-control form-control-lg p-3" id="exampleInputMessage"></textarea>
+        <label for="message" class="form-label">Tell us about your concrete project *</label>
+        <textarea type="text" name="message" class="form-control form-control-lg p-3" id="message"></textarea>
       </div>
       <div class="mb-3" data-netlify-recaptcha="true"></div>
       <button type="submit" class="btn btn-light btn-xl">Submit</button>
