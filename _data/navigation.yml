@@ -1,14 +1,21 @@
 - title: "Home"
-  link: "/"
+  url: "/"
 
 - title: "Services"
-  link: "/services/"
+  url: "/services/"
+  sublinks:
+  - title: "Basic Slab Concrete"
+    url: "/basic-slabs/"
+  - title: "Concrete Patios"
+    url: "/concrete-patios/"
+  - title: "Stamped Concrete"
+    url: "/stamped-concrete/"
 
 # - title: "Locations"
-#   link: "/locations/"
+#   url: "/locations/"
 
 # - title: "Articles"
-#   link: "/blog/"
+#   url: "/blog/"
 
 - title: "Contact Us"
-  link: "/contact/"
+  url: "/contact/"

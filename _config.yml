@@ -1,8 +1,11 @@
 url: https://proconcretespokane.com
 title: All-Pro Concrete Spokane
 phone: (509) 257-4522
+logo: 
+logo-width: 
 
 google-analytics: G-86ESLR4NPE
+site-author: 325 Studio
 
 category-list: [services]
 
@@ -38,3 +41,19 @@ cta:
 # Form background color
 form: 
   bg: "#CAD5E0"
+
+# Local Business Schema
+schema:
+  # name: Same as title above
+  image: 
+  # telephone: Same as phone above
+  priceRange: "$$"
+  address:
+    city: "Spokane"
+    state: "Washington"
+    country: "USA"
+    postalCode: "99201"
+  hours:
+    dayOfWeek: "Monday-Sunday"
+  # url: Same as url above
+# End Schema
