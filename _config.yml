@@ -44,6 +44,7 @@ form:
 
 # Local Business Schema
 schema:
+  type: LocalBusiness
   # name: Same as title above
   image: 
   # telephone: Same as phone above

@@ -22,27 +22,17 @@ main-image: concrete-driveway-1.jpg
           <p>
             We believe that getting your concrete project done should be a hassle-free experience. From the initial consultation to the final cleanup, we handle every aspect with professionalism and care. Our team is always ready to address your questions and concerns. We will provide clear communication throughout the entire process.
           </p>
-
           {% for cat in site.category-list %}  
             <ul>
-              {% for page in site.pages %}
-                {% if page.resource == true %}
-                  {% for pc in page.categories %}
-                    {% if pc == cat %}
+              {% for page in site.pages %}{% if page.resource == true %}{% for pc in page.categories %}{% if pc == cat %}
                       <li class="p-1">
                         <a href="{{ page.url }}">{{ page.title }}</a>
                       </li>
-                    {% endif %}   <!-- cat-match-p -->
-                  {% endfor %}  <!-- page-category -->
-                {% endif %}   <!-- resource-p -->
-              {% endfor %}  <!-- page -->
+                    {% endif %}{% endfor %}{% endif %}{% endfor %}
             </ul>
-            {% endfor %}  <!-- cat -->
-
+            {% endfor %}
         </div>
-        <!-- col-lg-5 FORM-->
         {% include form.html %}
-
       </div>
     </div>
   </div>
